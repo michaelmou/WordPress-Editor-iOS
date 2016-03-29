@@ -901,7 +901,7 @@ ZSSEditor.markImageUploadDone = function(imageNodeIdentifier, image, mediaID) {
         // set remote source
         imageNode.attr('src', image.src);
         // set attributes
-        imageNode.attr({'width':image.width, 'height':image.height, 'class':'alignnone size-full'});
+        imageNode.attr({'width':'100%', 'height':'100%', 'class':'alignnone size-full'});
         if (mediaID >= 0) {
             imageNode.addClass('wp-image-' + mediaID);
         }
